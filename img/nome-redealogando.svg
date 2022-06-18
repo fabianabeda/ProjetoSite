@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="401" height="124" viewBox="0 0 401 124">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+        font-size: 50px;
+        fill: #fad02c;
+        font-family: "Bauhaus 93";
+      }
+    </style>
+  </defs>
+  <text id="Rede" class="cls-1" transform="translate(-0.199 51.404) scale(1.302)">Rede</text>
+  <text id="alogando" class="cls-1" transform="translate(114.917 101.522) scale(1.302)">alogando</text>
+</svg>

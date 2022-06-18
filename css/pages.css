@@ -1,0 +1,101 @@
+
+.text-center {
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 20px;
+  text-align: justify;
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-indent: 2em;
+}
+
+.table-pages {
+  text-align: center;
+  min-width: 300px;
+  margin: auto;
+  margin-top: 50px;
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+  border-top: 1px solid black; 
+}
+
+.td, .th {
+  padding: 5px;
+}
+
+.tbody-pages .td:nth-child(1) {
+  text-align: left;
+}
+
+.tbody-pages tr:nth-child(2n+1) {
+  background-color: rgba(255, 255, 0, 0.63);
+}
+
+img {
+  width: 180px;
+  height: 160px;
+}
+
+h2 {
+  text-align: center;
+  background-color: #fed136;
+}
+
+.infor {
+  box-shadow: 0px 13px 40px #0000001f;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.colaborador {
+  background-color: white; 
+}
+
+.text p {
+  padding-left: 30px;
+}
+
+.img {
+  width: 550px;
+
+}
+.copyright {
+    text-align: center;
+    padding: 15px;
+    color: white;
+    background-color: #FAD02C;
+    font-family: Arial;
+    font-size: 20px;
+    cursor: default;
+  }
+
+
+@media all and (max-width: 1024px) {
+  .text-center{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+}
+.btn-bot {
+  font-size: 1.6rem;
+  text-decoration: none;
+  line-height: 3rem;
+  margin-left: 46%;
+  margin-right: 45%;
+  color: black;
+}
+.btn-bot:hover {
+  color:black;
+  background-color: yellow;
+  text-decoration: none;
+}
+
+@media all and (max-width: 1024px) {
+  .btn-bot {
+    margin-left: 38%;
+    margin-right: 25%;
+  }
+}

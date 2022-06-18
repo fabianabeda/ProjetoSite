@@ -1,0 +1,363 @@
+  body {
+    font-family: Arial;
+    margin: 0;
+    font-style: normal;
+  }
+
+  /* Header */
+  header {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  header a {
+    color:black;
+    background-color: white;
+    border-color: #fed136;
+    border-radius: 3px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    line-height: 3;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  header a img {
+    width:90px; 
+    height:90px;
+    margin: 0px;
+    border-radius: 50%;
+    background-color: white;
+    text-decoration: none;
+  }
+
+  div .text-ajuda {
+    background-color:#fed136;
+    color: black;
+    height: 60px; 
+  }
+
+  div .text-ajuda h1 {
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    font-size: 2em;
+  }
+
+  div .text-ajuda p {
+    text-align: justify;
+    text-indent: 2em;
+    width: 90%;
+    height: 90%;
+    font-size: 1.2em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  /*main*/
+  main {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 110px 5%;
+    clear: both;
+  }
+
+  .service {
+    width: 300px;
+    height: 350px;
+		background-color:white;
+    box-shadow: 0px 13px 40px #0000001f;
+    color: #fed136;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div .intro-text {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../img/depre.png);
+    background-size: cover; background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    min-height: 400px;
+    color: white;
+    position: relative;
+    padding: 2rem 1rem;
+    opacity: 0;
+    animation: fadeInText 0s 1.1s both;
+    overflow: hidden;
+  }
+
+  div .intro-text:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#fed136;
+    transform: translateX(-100%);
+    animation: enBlock 1.0s 0.5s both, reBlock 1.5s 1.1s both;
+  }
+  
+  @keyframes fadeInText {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes enBlock {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes reBlock {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+
+  .service .imagem img {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+
+  div .intro-text p, main .intro-text h1 {
+    color: white;
+    }
+
+  div .intro-text h1{
+    margin: 0px;
+    font-size: 3em;
+    text-transform: uppercase;
+    position: relative;
+    padding: 2rem 1rem;
+    opacity: 0;
+    animation: fadeInText 0s 1.1s both
+  }
+
+  div .intro-text p {
+    font-size: 2em;
+    font-style: italic;
+  }
+
+  div .service-description {
+    display: grid;
+    justify-content: center;
+    grid-gap: 30px;
+    padding: 20px 7%;
+    float: left;
+  }
+
+  h2 {
+    padding-left: 100px;
+    text-align: center;
+    background-color: #FED800;
+    margin-right: 50%;
+    font-size: 1.7em;
+  }
+
+  a, a:visited {
+    text-decoration: none;
+    color:#333;
+  }
+
+  main .service p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  /* footer */
+  footer {
+    background-color:#fed136;
+  }
+
+  footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  footer section .address {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: white;
+    text-decoration: none;
+  }
+
+  footer section .address a img {
+    width:130px; 
+    height:130px;
+    margin: 0px;
+  }
+
+  footer section .social a {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    width: 60px;
+    height: 60px;
+    border:  5px solid black;
+    border-radius: 50%;
+    color: black;
+    text-decoration: none;
+  }
+
+  footer section .social ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  footer section .social h1 {
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  footer section.social a:hover {
+    color: #fff;
+    background-color: black;
+  }
+
+  .copyright {
+    text-align: center;
+    padding: 15px;
+    color: #555;
+    background-color: #c7c7af;
+  }
+
+  .mapa {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    color: #555;
+  
+  }
+  span iframe {
+    width: 400px;
+    height: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+ .buttom-read {
+    background-color: #fed136;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 0px;
+  }
+
+  div b {
+    color: white
+  }
+
+  .buttom-read:hover, div b:hover {
+    background-color: yellow;
+    color: black;
+  }
+
+  .botoes a:hover {
+    background-color: #0000001f;
+  }
+
+
+@media screen and (min-width: 1366px) {
+  div .text-ajuda h1 {
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1365px) {
+  div .text-ajuda h1 {
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    font-size: 30px;
+  }
+  div .text-ajuda {
+    background-color:#fed136;
+    color: black;
+    height: 75px; 
+  }
+
+}
+
+@media all and (max-width: 1024px) {
+
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 620px;
+  }
+
+  main .service b {
+    font-size: 40px;
+  }
+
+  div .text-ajuda p {
+    font-size: 2em;
+
+  }
+
+}
+
+/* @media all and (max-width: 1024px) {
+
+
+  div .service-description {
+  display: grid;
+  justify-content: center;
+  grid-gap: 30px;
+  padding: 20px 7%;
+  }
+
+  main {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 110px 5%;
+  }
+  
+} */

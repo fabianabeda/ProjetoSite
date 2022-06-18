@@ -1,0 +1,37 @@
+body {
+  margin: 0px;
+  font-family: Arial;
+}
+
+.cabecalho {
+  background-color: #FAD02C;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial;
+  font-size: 25px;
+}
+div b {
+  color: white;
+}
+
+.btn-intro a:hover {
+  background-color: #0000001f;
+}
+
+.btn-intro, .btn-intro a{
+  color:black;
+  border-color: black;
+  font-size: 25px;
+  padding: 5px 20px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial;
+}
+
+.logo{
+  width:40px; 
+  height:40px;
+  margin: 0px;
+}

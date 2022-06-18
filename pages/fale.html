@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/forms.css">
+</head>
+<body>
+  <main>
+    <a class='btn-link' href="../index.html">
+    <img class='btn' src="../img/botao-voltar.png" alt="botão">
+    </a>
+    <form>
+      <h1>Fale conosco</h1>
+      <h2> Para falar conosco preencha os campos abaixo que em breve entraremos em contato. Obrigado(a)!"</h2>
+      <h3> Os campos com * são obrigatórios.</h3>
+      <fieldset>
+        <div>
+          <label for="nome-user">Nome*</label>
+          <input type="text" name="nome-user" id="nome-user" placeholder="Digite seu nome" required> 
+        </div>
+        <div>
+          <label for="tel-user">Telefone</label>
+          <input type="text" name="tel-user" id="tel-user" placeholder="Digite seu telefone"> 
+        </div>
+        <div>
+          <label for="email">E-mail*</label>
+          <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required> 
+        </div>
+        <div>
+          <label for="assunto-user">Assunto*</label>
+          <select name="assunto-user" id="assunto-user"required>
+            <option value="" selected>escolha um assunto</option>
+            <option value="colab">Colaboração</option>
+            <option value="geral">Geral</option>
+            <option value="cont">Contato</option>
+            <option value="contrib">Contribuíção</option>
+          </select>
+        <br>
+        <br>
+        </div>
+        <div>
+          <label for="message-user">Mensagem*</label>
+          <textarea name="message-user" id="message-user" placeholder="Digite uma mensagem" required rows="6" cols="45"></textarea>
+          <br>
+          <br>
+
+          <label for="novidades"> Você quer receber e-mail com novidades?</laber>
+          <select id="novidades" name="nov">
+            <option value=""></option>
+            <option value="sim">Sim, quero receber</option>
+            <option value="nao">Não, não quero receber</option>
+            <br>
+        </div>
+      </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>
